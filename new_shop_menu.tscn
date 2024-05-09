@@ -1,0 +1,104 @@
+[gd_scene load_steps=6 format=3 uid="uid://caj1rw8e2dxyk"]
+
+[ext_resource type="Script" path="res://StaticBody2DNS.gd" id="1_psjup"]
+[ext_resource type="Texture2D" uid="uid://coqxb4qm514hm" path="res://art/Additionals/images_-_2024-04-26T182515.133-removebg-preview.png" id="2_etats"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecsv2"]
+atlas = ExtResource("2_etats")
+region = Rect2(0, 0, 195, 205)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_87aop"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ecsv2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oiu0w"]
+radius = 52.4786
+
+[node name="NewShopMenu" type="StaticBody2D"]
+position = Vector2(117, 77)
+script = ExtResource("1_psjup")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3.33786e-06, 27)
+scale = Vector2(0.462821, 0.415854)
+sprite_frames = SubResource("SpriteFrames_87aop")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -37.0
+offset_top = -41.0
+offset_right = 36.0
+offset_bottom = -8.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Left" type="Button" parent="."]
+offset_left = -34.0
+offset_top = -21.0
+offset_right = 16.0
+offset_bottom = 10.0
+scale = Vector2(0.4, 0.4)
+text = "left"
+metadata/_edit_use_anchors_ = true
+
+[node name="ItemName" type="RichTextLabel" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = -34.0
+offset_top = -40.0
+offset_right = 128.0
+offset_bottom = -15.0
+scale = Vector2(0.4, 0.4)
+text = "XXXX"
+metadata/_edit_use_anchors_ = true
+
+[node name="Right" type="Button" parent="."]
+offset_left = 12.0
+offset_top = -21.0
+offset_right = 62.0
+offset_bottom = 10.0
+scale = Vector2(0.4, 0.4)
+text = "Right"
+metadata/_edit_use_anchors_ = true
+
+[node name="Buy" type="Button" parent="."]
+offset_left = -12.0
+offset_top = -21.0
+offset_right = 38.0
+offset_bottom = 10.0
+scale = Vector2(0.4, 0.4)
+text = "Buy
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="ItemPrice" type="RichTextLabel" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = -34.0
+offset_top = -32.0
+offset_right = 103.0
+offset_bottom = -7.0
+scale = Vector2(0.4, 0.4)
+text = "0000"
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 12.0
+offset_top = -31.0
+offset_right = 69.0
+offset_bottom = -6.0
+scale = Vector2(0.4, 0.4)
+text = "Yen"
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1)
+shape = SubResource("CircleShape2D_oiu0w")
+
+[connection signal="pressed" from="Left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="Right" to="." method="_on_right_pressed"]
+[connection signal="pressed" from="Buy" to="." method="_on_buy_pressed"]
