@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c8twmwqcjipo8"
+path="res://.godot/imported/-- Magic _ Fantasy (Royalty Free Music) - _CASTLES IN THE SKY_ by _ScottBuckley ---- ----(MP3_160K).mp3-2f3894be0b895aec7a8cb171e0b39f00.mp3str"
+
+[deps]
+
+source_file="res://Audio/-- Magic _ Fantasy (Royalty Free Music) - _CASTLES IN THE SKY_ by _ScottBuckley ---- ----(MP3_160K).mp3"
+dest_files=["res://.godot/imported/-- Magic _ Fantasy (Royalty Free Music) - _CASTLES IN THE SKY_ by _ScottBuckley ---- ----(MP3_160K).mp3-2f3894be0b895aec7a8cb171e0b39f00.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

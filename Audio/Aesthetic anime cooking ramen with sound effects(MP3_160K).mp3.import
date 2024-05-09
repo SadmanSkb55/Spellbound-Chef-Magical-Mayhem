@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bifnfync0pncf"
+path="res://.godot/imported/Aesthetic anime cooking ramen with sound effects(MP3_160K).mp3-0ef99bcbeb977aad13986533530552ca.mp3str"
+
+[deps]
+
+source_file="res://Audio/Aesthetic anime cooking ramen with sound effects(MP3_160K).mp3"
+dest_files=["res://.godot/imported/Aesthetic anime cooking ramen with sound effects(MP3_160K).mp3-0ef99bcbeb977aad13986533530552ca.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

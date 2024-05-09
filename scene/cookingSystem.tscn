@@ -1,0 +1,460 @@
+[gd_scene load_steps=49 format=3 uid="uid://dyo6jjsauq668"]
+
+[ext_resource type="Script" path="res://scene/cookingSystem.gd" id="1_kggb6"]
+[ext_resource type="Texture2D" uid="uid://dc0eopi36u0jk" path="res://art/KitchenArts/whitebg (1).png" id="2_negj8"]
+[ext_resource type="Texture2D" uid="uid://csd78qdwq23lm" path="res://art/ingredients/ingredient (2).png" id="3_1s525"]
+[ext_resource type="Texture2D" uid="uid://dl1oca0ll5ac" path="res://art/ingredients/ingredient (18).png" id="4_cl38b"]
+[ext_resource type="Texture2D" uid="uid://bvvgejprxif46" path="res://art/ingredients/ingredient (13).png" id="5_txvw8"]
+[ext_resource type="Texture2D" uid="uid://bguaet5wbhdmc" path="res://art/ingredients/ingredient (5).png" id="6_1gq52"]
+[ext_resource type="Texture2D" uid="uid://bh7776denjs35" path="res://art/ingredients/ingredient (11).png" id="7_buq4h"]
+[ext_resource type="Texture2D" uid="uid://b63i2bnmwl6in" path="res://art/ingredients/ingredient (4).png" id="8_rojlh"]
+[ext_resource type="Texture2D" uid="uid://5dumoqbqpbkb" path="res://art/ingredients/ingredient (16).png" id="9_d4rju"]
+[ext_resource type="Texture2D" uid="uid://dve62hy7grlnj" path="res://art/ingredients/ingredient (14).png" id="10_gjt0g"]
+[ext_resource type="Texture2D" uid="uid://cpwsw5f5583gv" path="res://art/ingredients/ingredient (9).png" id="11_rpyjs"]
+[ext_resource type="Texture2D" uid="uid://bdi2va4a372vb" path="res://art/ingredients/ingredient (17).png" id="12_swb1c"]
+[ext_resource type="Texture2D" uid="uid://qe8swupkvmmm" path="res://art/ingredients/ingredient (7).png" id="13_prwhj"]
+[ext_resource type="Texture2D" uid="uid://d0si3awi858cb" path="res://art/ingredients/ingredient (15).png" id="14_05m5r"]
+[ext_resource type="Texture2D" uid="uid://c1e4uhrwwrioc" path="res://art/ingredients/ingredient (10).png" id="15_7b70y"]
+[ext_resource type="Texture2D" uid="uid://b77rscx133657" path="res://art/ingredients/ingredient (6).png" id="16_5mna8"]
+[ext_resource type="Texture2D" uid="uid://b05vs3eoesr3e" path="res://art/ingredients/ingredient (3).png" id="17_rifhm"]
+[ext_resource type="Texture2D" uid="uid://knxjyd0q0ft5" path="res://art/ingredients/ingredient (8).png" id="18_gcj3s"]
+[ext_resource type="Texture2D" uid="uid://cdckb0rq7hku8" path="res://art/ingredients/ingredient (12).png" id="19_24ing"]
+[ext_resource type="Texture2D" uid="uid://c6oo3q5ywuna5" path="res://art/sushis/sushi (4).png" id="20_x3xlw"]
+[ext_resource type="Texture2D" uid="uid://ckpccymmd4cnh" path="res://art/sushis/sushi (5).png" id="21_ggmkc"]
+[ext_resource type="Texture2D" uid="uid://bnvc3sa3b1dra" path="res://art/sushis/sushi (1).png" id="22_u2wdd"]
+[ext_resource type="Texture2D" uid="uid://ce2wc8q2lqttv" path="res://art/sushis/sushi (2).png" id="23_1hyxn"]
+[ext_resource type="Texture2D" uid="uid://cr43w44narlty" path="res://art/sushis/sushi (3).png" id="24_hln3d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xikwk"]
+atlas = ExtResource("3_1s525")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ousv4"]
+atlas = ExtResource("4_cl38b")
+region = Rect2(0, 0, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h17x8"]
+atlas = ExtResource("5_txvw8")
+region = Rect2(0, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hplc8"]
+atlas = ExtResource("6_1gq52")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rdu8e"]
+atlas = ExtResource("7_buq4h")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ebcy"]
+atlas = ExtResource("8_rojlh")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_td8g2"]
+atlas = ExtResource("9_d4rju")
+region = Rect2(0, 0, 16, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ilphm"]
+atlas = ExtResource("10_gjt0g")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hpccv"]
+atlas = ExtResource("11_rpyjs")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vw43y"]
+atlas = ExtResource("12_swb1c")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6stpa"]
+atlas = ExtResource("13_prwhj")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v7y6o"]
+atlas = ExtResource("14_05m5r")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d3x6v"]
+atlas = ExtResource("15_7b70y")
+region = Rect2(0, 0, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yalb1"]
+atlas = ExtResource("16_5mna8")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lbw4n"]
+atlas = ExtResource("17_rifhm")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lruyr"]
+atlas = ExtResource("18_gcj3s")
+region = Rect2(0, 0, 16, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a3j88"]
+atlas = ExtResource("19_24ing")
+region = Rect2(0, 0, 16, 13)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wbf5c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xikwk")
+}],
+"loop": true,
+"name": &"Nori",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ousv4")
+}],
+"loop": true,
+"name": &"avocado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h17x8")
+}],
+"loop": true,
+"name": &"carrot",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hplc8")
+}],
+"loop": true,
+"name": &"crabmeat",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rdu8e")
+}],
+"loop": true,
+"name": &"cucumber",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ebcy")
+}],
+"loop": true,
+"name": &"mirin",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_td8g2")
+}],
+"loop": true,
+"name": &"onion",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ilphm")
+}],
+"loop": true,
+"name": &"pickledginger",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hpccv")
+}],
+"loop": true,
+"name": &"rice",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vw43y")
+}],
+"loop": true,
+"name": &"salmon",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6stpa")
+}],
+"loop": true,
+"name": &"salt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v7y6o")
+}],
+"loop": true,
+"name": &"seed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d3x6v")
+}],
+"loop": true,
+"name": &"soysauce",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yalb1")
+}],
+"loop": true,
+"name": &"sugar",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lbw4n")
+}],
+"loop": true,
+"name": &"tuna",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lruyr")
+}],
+"loop": true,
+"name": &"vinegar",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a3j88")
+}],
+"loop": true,
+"name": &"wasabi",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_saiot"]
+atlas = ExtResource("20_x3xlw")
+region = Rect2(0, 0, 512, 368)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cml5c"]
+atlas = ExtResource("21_ggmkc")
+region = Rect2(0, 0, 260, 280)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jl4f1"]
+atlas = ExtResource("22_u2wdd")
+region = Rect2(0, 0, 498, 501)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0b73"]
+atlas = ExtResource("23_1hyxn")
+region = Rect2(0, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1m12r"]
+atlas = ExtResource("24_hln3d")
+region = Rect2(0, 0, 500, 500)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_la8fu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_saiot")
+}],
+"loop": true,
+"name": &"gunkan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cml5c")
+}],
+"loop": true,
+"name": &"maki",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jl4f1")
+}],
+"loop": true,
+"name": &"nigiri",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0b73")
+}],
+"loop": true,
+"name": &"sashmi",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1m12r")
+}],
+"loop": true,
+"name": &"temaki",
+"speed": 5.0
+}]
+
+[node name="Control" type="StaticBody2D"]
+script = ExtResource("1_kggb6")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color(0.898039, 0.301961, 0.541176, 0.133333)
+offset_right = 164.0
+offset_bottom = 84.0
+color = Color(0.282353, 0.329412, 0.654902, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+modulate = Color(0.501961, 0.145098, 0.188235, 0.647059)
+offset_left = 96.0
+offset_right = 164.0
+offset_bottom = 84.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(127, 8)
+scale = Vector2(0.0475, 0.04075)
+texture = ExtResource("2_negj8")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="AddItems" type="Button" parent="."]
+offset_left = 33.0
+offset_top = 31.0
+offset_right = 120.0
+offset_bottom = 62.0
+scale = Vector2(0.4, 0.4)
+text = "Add Items"
+
+[node name="Left" type="Button" parent="."]
+offset_left = 2.0
+offset_top = 31.0
+offset_right = 69.0
+offset_bottom = 62.0
+scale = Vector2(0.4, 0.4)
+text = "Left"
+
+[node name="Right" type="Button" parent="."]
+offset_left = 72.0
+offset_top = 31.0
+offset_right = 127.0
+offset_bottom = 62.0
+scale = Vector2(0.4, 0.4)
+text = "Right"
+
+[node name="icon" type="AnimatedSprite2D" parent="."]
+position = Vector2(14, 16)
+scale = Vector2(1.34375, 1.24279)
+sprite_frames = SubResource("SpriteFrames_wbf5c")
+animation = &"wasabi"
+
+[node name="ItemName" type="RichTextLabel" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 24.0
+offset_top = 3.0
+offset_right = 199.0
+offset_bottom = 26.0
+scale = Vector2(0.4, 0.4)
+text = "----"
+
+[node name="AAm" type="RichTextLabel" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 68.0
+offset_top = 11.0
+offset_right = 138.0
+offset_bottom = 34.0
+scale = Vector2(0.4, 0.4)
+text = "00"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 24.0
+offset_top = 12.0
+offset_right = 144.0
+offset_bottom = 35.0
+scale = Vector2(0.4, 0.4)
+text = "Available :"
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 3.0
+offset_top = 46.0
+offset_right = 145.0
+offset_bottom = 69.0
+scale = Vector2(0.4, 0.4)
+text = "Ingredient Order:"
+
+[node name="icon2" type="AnimatedSprite2D" parent="."]
+position = Vector2(108, 25)
+scale = Vector2(0.061339, 0.0547381)
+sprite_frames = SubResource("SpriteFrames_la8fu")
+animation = &"temaki"
+
+[node name="Next" type="Button" parent="."]
+offset_left = 98.0
+offset_top = 38.0
+offset_right = 163.0
+offset_bottom = 69.0
+scale = Vector2(0.4, 0.4)
+text = "Next"
+
+[node name="Sushiname" type="RichTextLabel" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 122.0
+offset_top = 24.0
+offset_right = 252.0
+offset_bottom = 47.0
+scale = Vector2(0.4, 0.4)
+text = "--------"
+
+[node name="Cook" type="Button" parent="."]
+offset_left = 116.0
+offset_top = 71.0
+offset_right = 183.0
+offset_bottom = 102.0
+scale = Vector2(0.4, 0.4)
+text = "Cook"
+
+[node name="Status" type="RichTextLabel" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 98.0
+offset_top = 52.0
+offset_right = 256.0
+offset_bottom = 75.0
+scale = Vector2(0.4, 0.4)
+text = "Idle"
+
+[node name="Result" type="RichTextLabel" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 98.0
+offset_top = 60.0
+offset_right = 256.0
+offset_bottom = 83.0
+scale = Vector2(0.4, 0.4)
+text = "On Queue"
+
+[node name="itemsaddedonqueue" type="RichTextLabel" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 3.0
+offset_top = 55.0
+offset_right = 233.0
+offset_bottom = 95.0
+scale = Vector2(0.4, 0.4)
+text = "->->->"
+
+[node name="Previous" type="Button" parent="."]
+offset_left = 132.0
+offset_top = 38.0
+offset_right = 207.0
+offset_bottom = 69.0
+scale = Vector2(0.4, 0.4)
+text = "previous"
+
+[connection signal="pressed" from="AddItems" to="." method="_on_add_items_pressed"]
+[connection signal="pressed" from="Left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="Right" to="." method="_on_right_pressed"]
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="Cook" to="." method="_on_cook_pressed"]
+[connection signal="pressed" from="Previous" to="." method="_on_previous_pressed"]

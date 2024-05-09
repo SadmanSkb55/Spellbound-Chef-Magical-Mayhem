@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://br336wybx6xrn"]
+
+[ext_resource type="Script" path="res://scene/menu_2.gd" id="1_8sfet"]
+[ext_resource type="Texture2D" uid="uid://bywfef401b37s" path="res://art/Additionals/IMG-20240423-WA0000-removebg-preview.png" id="1_fb3yu"]
+
+[node name="Menu2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8sfet")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -574.0
+offset_top = -421.0
+offset_right = 1726.0
+offset_bottom = 1225.0
+color = Color(0, 0, 0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(613, 331)
+scale = Vector2(1.78739, 1.62696)
+texture = ExtResource("1_fb3yu")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 209.0
+offset_top = 136.0
+offset_right = 782.0
+offset_bottom = 445.0
+scale = Vector2(1.2, 1.2)
+text = "In Arcanovia, cooking was a dangerous game. Arlo, an ambitious chef, knew he needed deadly spells to make the perfect sushi. The only one who had them was Magistra Veloria, the witch deep in the Whispering Woods.
+
+Arlo braved the perilous forest to reach her cabin. Veloria's warning was clear: \"These spells can do more than cook—they can kill.\" But Arlo was determined to be the best, no matter the risk.
+
+Back in his kitchen, he cast the spells: Spicefall to season, Bakeblast to cook, and Bladefury to chop. He knew one mistake could be fatal, but in Arcanovia, that's what it took to reach the top."
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 447.0
+offset_top = 495.0
+offset_right = 691.0
+offset_bottom = 526.0
+text = "Start
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

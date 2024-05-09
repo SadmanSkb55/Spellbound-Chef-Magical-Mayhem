@@ -1,0 +1,11 @@
+[
+	{"name":"Witch","text":"Ah, welcome, young apprentice. I see you're interested in the culinary arts, but be warned—cooking in this realm is not as simple as it seems. To create the perfect dish, you'll need to master the deadly arts of the kitchen."},
+	{"name":"Kenji","text":"Deadly arts? What does that have to do with cooking?"},
+	{"name":"Witch","text":"Oh, everything, dearie. You can't make a meal here without the right spells. Without them, you're as likely to burn down the kitchen as you are to make a decent stew. The first spell you need is Spicefall. It ensures every grain of salt and spice finds its way exactly where it should. Without it, your food will taste as bland as a ghoul's diet."},
+	{"name":"Kenji","text":"Sounds important. What about the other spells?"},
+	{"name":"Witch","text":"Yes, yes, very important. The next spell is Bakeblast. Without it, your breads and cakes will either be raw in the center or burnt to a crisp. It's the secret to a golden crust and a soft interior. Trust me, you don't want to attempt baking without it."},
+	{"name":"kenji","text":"Got it. And the third spell?"},
+	{"name":"Witch","text":"Ah, that would be Bladefury. Don't let the name scare you; it's only deadly to vegetables and meats. It makes chopping and dicing a breeze, but without it, you'll be spending hours with a dull knife, risking your fingers in the process."},
+	{"name":"kenji","text":"So, I need to collect these spells before I can start cooking?"},
+	{"name":"Witch","text":"Exactly! Without them, you'll be facing a culinary disaster."}
+]

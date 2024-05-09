@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjjojyt6qllb"
+path="res://.godot/imported/Dark Epic Music_ _Witch Wicca_ _ Glen Gabriel(MP3_160K).mp3-4dcef3890c27d5ec17371415ef1ba281.mp3str"
+
+[deps]
+
+source_file="res://Audio/Dark Epic Music_ _Witch Wicca_ _ Glen Gabriel(MP3_160K).mp3"
+dest_files=["res://.godot/imported/Dark Epic Music_ _Witch Wicca_ _ Glen Gabriel(MP3_160K).mp3-4dcef3890c27d5ec17371415ef1ba281.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

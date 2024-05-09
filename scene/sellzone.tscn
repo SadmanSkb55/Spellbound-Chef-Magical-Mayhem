@@ -1,0 +1,189 @@
+[gd_scene load_steps=17 format=3 uid="uid://bsgnevqi23t8v"]
+
+[ext_resource type="Script" path="res://scene/sellzone.gd" id="1_pyc1q"]
+[ext_resource type="Texture2D" uid="uid://kd7acg6rn0pb" path="res://art/KitchenArts/cash.png" id="2_knxqg"]
+[ext_resource type="Texture2D" uid="uid://c6oo3q5ywuna5" path="res://art/sushis/sushi (4).png" id="3_h562f"]
+[ext_resource type="Texture2D" uid="uid://ckpccymmd4cnh" path="res://art/sushis/sushi (5).png" id="4_wk8ee"]
+[ext_resource type="Texture2D" uid="uid://bnvc3sa3b1dra" path="res://art/sushis/sushi (1).png" id="5_xh37f"]
+[ext_resource type="Texture2D" uid="uid://ce2wc8q2lqttv" path="res://art/sushis/sushi (2).png" id="6_15qwd"]
+[ext_resource type="Texture2D" uid="uid://cr43w44narlty" path="res://art/sushis/sushi (3).png" id="7_p8w04"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yxvom"]
+size = Vector2(172, 61)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dcq1m"]
+atlas = ExtResource("2_knxqg")
+region = Rect2(0, 0, 180, 125)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bk82b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dcq1m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_saiot"]
+atlas = ExtResource("3_h562f")
+region = Rect2(0, 0, 512, 368)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cml5c"]
+atlas = ExtResource("4_wk8ee")
+region = Rect2(0, 0, 260, 280)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jl4f1"]
+atlas = ExtResource("5_xh37f")
+region = Rect2(0, 0, 498, 501)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0b73"]
+atlas = ExtResource("6_15qwd")
+region = Rect2(0, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1m12r"]
+atlas = ExtResource("7_p8w04")
+region = Rect2(0, 0, 500, 500)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_18hcu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_saiot")
+}],
+"loop": true,
+"name": &"gunkan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cml5c")
+}],
+"loop": true,
+"name": &"maki",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jl4f1")
+}],
+"loop": true,
+"name": &"nigiri",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0b73")
+}],
+"loop": true,
+"name": &"sashmi",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1m12r")
+}],
+"loop": true,
+"name": &"temaki",
+"speed": 5.0
+}]
+
+[node name="Sellzone" type="StaticBody2D"]
+position = Vector2(1, 0)
+script = ExtResource("1_pyc1q")
+metadata/_edit_lock_ = true
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(389, 316)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 21.5)
+shape = SubResource("RectangleShape2D_yxvom")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(389, 316)
+sprite_frames = SubResource("SpriteFrames_bk82b")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color(0.239216, 1, 1, 0.258824)
+offset_left = 390.0
+offset_top = 169.0
+offset_right = 504.0
+offset_bottom = 257.0
+color = Color(0.776471, 0.403922, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Sell" type="Button" parent="."]
+offset_left = 398.0
+offset_top = 235.0
+offset_right = 482.0
+offset_bottom = 266.0
+scale = Vector2(0.4, 0.4)
+text = "Sell"
+metadata/_edit_use_anchors_ = true
+
+[node name="Right" type="Button" parent="."]
+offset_left = 456.0
+offset_top = 235.0
+offset_right = 540.0
+offset_bottom = 266.0
+scale = Vector2(0.4, 0.4)
+text = "Next"
+metadata/_edit_use_anchors_ = true
+
+[node name="ItemName" type="RichTextLabel" parent="."]
+offset_left = 394.0
+offset_top = 170.0
+offset_right = 546.0
+offset_bottom = 210.0
+scale = Vector2(0.5, 0.5)
+text = "....."
+metadata/_edit_use_anchors_ = true
+
+[node name="Add More" type="Button" parent="."]
+offset_left = 427.0
+offset_top = 215.0
+offset_right = 511.0
+offset_bottom = 246.0
+scale = Vector2(0.4, 0.4)
+text = "Add More"
+metadata/_edit_use_anchors_ = true
+
+[node name="TotalYen" type="RichTextLabel" parent="."]
+offset_left = 428.0
+offset_top = 191.0
+offset_right = 522.0
+offset_bottom = 231.0
+scale = Vector2(0.5, 0.5)
+text = "00"
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 483.0
+offset_top = 191.0
+offset_right = 635.0
+offset_bottom = 231.0
+scale = Vector2(0.5, 0.5)
+text = "¥"
+metadata/_edit_use_anchors_ = true
+
+[node name="icon" type="AnimatedSprite2D" parent="."]
+position = Vector2(411, 210)
+scale = Vector2(0.082678, 0.0894763)
+sprite_frames = SubResource("SpriteFrames_18hcu")
+animation = &"temaki"
+
+[node name="amtavailable" type="RichTextLabel" parent="."]
+offset_left = 471.0
+offset_top = 211.0
+offset_right = 623.0
+offset_bottom = 251.0
+scale = Vector2(0.5, 0.5)
+text = "--"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="pressed" from="Sell" to="." method="_on_sell_pressed"]
+[connection signal="pressed" from="Right" to="." method="_on_right_pressed"]
+[connection signal="pressed" from="Add More" to="." method="_on_add_more_pressed"]

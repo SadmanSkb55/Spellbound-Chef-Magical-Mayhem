@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0kv7qmxjabv7"]
+
+[ext_resource type="Script" path="res://scene/quest.gd" id="1_2xq2f"]
+
+[node name="Quest" type="StaticBody2D"]
+script = ExtResource("1_2xq2f")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 95.0
+offset_bottom = 44.0
+color = Color(0.254902, 0.470588, 1, 0.203922)
+
+[node name="Submit" type="Button" parent="."]
+offset_left = 38.0
+offset_top = 34.0
+offset_right = 101.0
+offset_bottom = 65.0
+scale = Vector2(0.3, 0.3)
+text = "Submit"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_right = 313.0
+offset_bottom = 70.0
+scale = Vector2(0.3, 0.3)
+text = "                    The Witch's Request
+Collect the deadly cooking spells from the Witch."
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 6.0
+offset_top = 24.0
+offset_right = 283.0
+offset_bottom = 51.0
+scale = Vector2(0.3, 0.3)
+text = "Rewards: 100000 Yen,3 Nigiri Sushi"
+
+[connection signal="pressed" from="Submit" to="." method="_on_submit_pressed"]
